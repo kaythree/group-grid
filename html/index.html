@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="AngularModule">
+	<head>
+		<title> Summary </title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" />
+	    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.material.min.css" />
+	    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.min.css" />
+	    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.429/styles/kendo.dataviz.material.min.css" />	
+	    <link rel="stylesheet" href="../css/style.css" />
+	    <link rel="stylesheet" href="../css/gridStyle.css" />
+
+	</head>
+	<body ng-controller="GGController" ng-init="init()">
+		<div class="main-container" id="gg-container">
+			<!-- toggleClasses: summary / mytask below to details-grid -->
+			<div id="gg-grid" class="mytask"> 
+				<div ng-controller="mytaskGridCtrl" class="mytaskCont">
+					<kendo-grid options="mainGridOptions">
+						
+					</kendo-grid>
+				</div>
+			</div>
+		</div>	
+			
+		<script type="text/javascript" src="../js/libs/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/libs/angular.js"></script>
+		<script src="http://cdn.kendostatic.com/2015.1.429/js/kendo.all.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>
+
